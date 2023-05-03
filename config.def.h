@@ -1,10 +1,11 @@
 /* See LICENSE file for copyright and license details. */
-
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 5;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+#define ICONSIZE 16
+#define ICONSPACING 5
 static const char *fonts[]          = { "JetBrains Mono:size=12", "fontawesome:size=15" };
 static const char dmenufont[]       = "JetBrains Mono:size=12";
 static char normbgcolor[]           = "#222222";
@@ -18,6 +19,7 @@ static char *colors[][3] = {
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
+
 
 
 /* tagging */
