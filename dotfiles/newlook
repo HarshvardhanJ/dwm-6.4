@@ -1,0 +1,8 @@
+#!/bin/sh
+
+wall=$(find ~/wal -type f -name "*.jpg" -o -name "*.png" | shuf -n 1)
+feh --bg-scale $wall
+wal -c
+wal -i $wall
+
+xdotool key 0xffe9+F5
